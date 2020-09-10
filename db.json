@@ -1,0 +1,29 @@
+{ "user": [{
+  "id":1,
+  "nome": "Joice",
+  "sobrenome": "Fogaça",
+  "email": "joi.fogaca@gmail.com",
+  "dataNascimento": "1989-12-20T18:25:43.511Z",
+  "escolaridade" : 4},
+  {
+    "id":2,
+    "nome": "Felipe",
+    "sobrenome": "Felix",
+    "email": "fe.felix@gmail.com",
+    "dataNascimento": "1988-09-15T18:25:43.511Z",
+    "escolaridade" : 3},
+    {
+      "id":3,
+      "nome": "Emanuel",
+      "sobrenome": "Moura",
+      "email": "manu.moura@gmail.com",
+      "dataNascimento": "1993-07-17T18:25:43.511Z",
+      "escolaridade" : 2}
+],
+"escolaridade":[{"id": 1, "descricao": "Infantil"},
+    {"id": 2, "descricao": "Fundamental"},
+    {"id": 3, "descricao": "Médio"},
+    {"id": 4, "descricao": "Superior"}
+    ]
+
+}
