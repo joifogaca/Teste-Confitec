@@ -19,11 +19,11 @@ export class UserApi {
     return this.http.post<User>(`${this.apiBaseUrl}/user`, user).toPromise();
   }
 
-  remove(id) {
+  remove(id: number) {
     return this.http.delete(`${this.apiBaseUrl}/user/${id}`).toPromise();
   }
 
-  update(id: string, user: User) {
+  update(id: number, user: User) {
     return this.http.put<User>(`${this.apiBaseUrl}/user/${id}`, {user}).toPromise();
   }
 }

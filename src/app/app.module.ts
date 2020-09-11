@@ -7,6 +7,8 @@ import { UserModule } from './Pages/user/user.module';
 import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+
+
 @NgModule({
   declarations: [
     AppComponent

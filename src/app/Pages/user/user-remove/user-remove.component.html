@@ -1,0 +1,11 @@
+<div class="modal-header">
+    <h4 class="modal-title" id="modal-title">Excluir Usúario</h4>
+  </div>
+  <div class="modal-body">
+    <p><strong>Confirma a exclusão do usuário <span class="text-primary">{{ user.nome }}</span>?</strong></p>
+    <span >Esta operação não pode ser desfeita.</span>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-secondary" (click)="modal.dismiss('cancel click')">Cancelar</button>
+    <button type="button" ngbAutofocus class="btn btn-danger" (click)="remove()" >Ok</button>
+  </div>

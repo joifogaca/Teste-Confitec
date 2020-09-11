@@ -1,29 +1,110 @@
-{ "user": [{
-  "id":1,
-  "nome": "Joice",
-  "sobrenome": "Fogaça",
-  "email": "joi.fogaca@gmail.com",
-  "dataNascimento": "1989-12-20T18:25:43.511Z",
-  "escolaridade" : 4},
-  {
-    "id":2,
-    "nome": "Felipe",
-    "sobrenome": "Felix",
-    "email": "fe.felix@gmail.com",
-    "dataNascimento": "1988-09-15T18:25:43.511Z",
-    "escolaridade" : 3},
+{
+  "user": [
     {
-      "id":3,
+      "id": 1,
+      "nome": "Joice",
+      "sobrenome": "Fogaça",
+      "email": "joi.fogaca@gmail.com",
+      "dataNascimento": "2020-09-01",
+      "escolaridade": 4
+    },
+    {
+      "nome": "jo",
+      "sobrenome": "fo",
+      "email": "joi",
+      "escolaridade": "1",
+      "dataNascimento": "2020-09-01",
+      "id": 7
+    },
+    {
+      "nome": "joi",
+      "sobrenome": "",
+      "email": "fera@teste",
+      "escolaridade": "1",
+      "dataNascimento": "2002-02-20",
+      "id": 8
+    },
+    {
+      "nome": "diddie",
+      "sobrenome": "kong",
+      "email": "dk@gmail.com",
+      "escolaridade": "1",
+      "dataNascimento": "2020-09-10",
+      "id": 9
+    },
+    {
+      "nome": "bla",
+      "sobrenome": "bla",
+      "email": "joi.@teste",
+      "escolaridade": "1",
+      "dataNascimento": "2020-09-08",
+      "id": 10
+    },
+    {
+      "nome": "k",
+      "sobrenome": "l ",
+      "email": "m",
+      "escolaridade": "1",
+      "dataNascimento": "2020-09-09",
+      "id": 11
+    },
+    {
+      "nome": "joi",
+      "sobrenome": "fe",
+      "email": "h@b",
+      "escolaridade": 1,
+      "dataNascimento": "2020-09-16",
+      "id": 13
+    },
+    {
+      "nome": "j",
+      "sobrenome": "j",
+      "email": "j@j",
+      "escolaridade": 2,
+      "dataNascimento": "2020-09-09",
+      "id": 14
+    },
+    {
+      "nome": "joi",
+      "sobrenome": "jk",
+      "email": "j@j",
+      "escolaridade": 3,
+      "dataNascimento": "2020-09-16",
+      "id": 15
+    },
+    {
       "nome": "Emanuel",
       "sobrenome": "Moura",
       "email": "manu.moura@gmail.com",
-      "dataNascimento": "1993-07-17T18:25:43.511Z",
-      "escolaridade" : 2}
-],
-"escolaridade":[{"id": 1, "descricao": "Infantil"},
-    {"id": 2, "descricao": "Fundamental"},
-    {"id": 3, "descricao": "Médio"},
-    {"id": 4, "descricao": "Superior"}
-    ]
-
+      "escolaridade": 2,
+      "dataNascimento": "2020-09-15",
+      "id": 16
+    },
+    {
+      "id": 17,
+      "nome": "mmm",
+      "sobrenome": "mimi",
+      "email": "joi@f",
+      "escolaridade": 2,
+      "dataNascimento": "2020-09-08"
+    }
+  ],
+  "escolaridade": [
+    {
+      "id": 1,
+      "descricao": "Infantil"
+    },
+    {
+      "id": 2,
+      "descricao": "Fundamental"
+    },
+    {
+      "id": 3,
+      "descricao": "Médio"
+    },
+    {
+      "id": 4,
+      "descricao": "Superior"
+    }
+  ]
 }

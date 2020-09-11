@@ -20,8 +20,29 @@ export class UserState {
         return this._users.getValue();
       }
     
-    public getById(id: string): User {
+    public getById(id: number): User {
         return this.users.find(u => u.id === id);
     }
+
+    public update(userUpdated: User) {
+        const user = this.getById(userUpdated.id);
+    
+        if (user) {
+          const index = this.users.indexOf(user);
+    
+          this.users[index] = userUpdated;
+    
+          this.users = [...this.users];
+        }
+      }
+
+      public addUser(user: User) {
+        const currentValue = this.users;
+        this.users = [ ...currentValue, user ];
+      }
+
+      public removeUser(id: number) {
+        this.users = this.users.filter(u => u.id !== id);
+      }
 
 }
