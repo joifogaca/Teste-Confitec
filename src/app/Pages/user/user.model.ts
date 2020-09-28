@@ -4,5 +4,5 @@ export interface User {
     sobrenome: string;
     email: string;
     dataNascimento: Date;
-    escolaridade: number;
+    escolaridadeId: number;
   }

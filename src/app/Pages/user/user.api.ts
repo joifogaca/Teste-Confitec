@@ -7,23 +7,25 @@ import { User } from './user.model';
 })
 export class UserApi {
 
-  private readonly apiBaseUrl = ' http://localhost:3000';
+  //private readonly apiBaseUrl = ' http://localhost:3000';
+
+  private readonly apiBaseUrl = 'http://localhost:5000/api';
 
   constructor(private http: HttpClient) { }
 
   getAll() {
-    return this.http.get<User[]>(`${this.apiBaseUrl}/user`).toPromise();
+    return this.http.get<User[]>(`${this.apiBaseUrl}/usuario`).toPromise();
   }
 
   create(user: User) {
-    return this.http.post<User>(`${this.apiBaseUrl}/user`, user).toPromise();
+    return this.http.post<User>(`${this.apiBaseUrl}/usuario`, user).toPromise();
   }
 
   remove(id: number) {
-    return this.http.delete(`${this.apiBaseUrl}/user/${id}`).toPromise();
+    return this.http.delete(`${this.apiBaseUrl}/usuario/${id}`).toPromise();
   }
 
   update(id: number, user: User) {
-    return this.http.put<User>(`${this.apiBaseUrl}/user/${id}`, {user}).toPromise();
+    return this.http.put<User>(`${this.apiBaseUrl}/usuario/${id}`, user).toPromise();
   }
 }

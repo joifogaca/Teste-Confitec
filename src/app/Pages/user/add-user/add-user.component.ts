@@ -2,6 +2,8 @@ import { Component, OnInit, Input } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { FormBuilder, FormGroup, Validators, AbstractControl } from '@angular/forms';
 import { UserService } from '../user.service';
+import { formatDate } from '@angular/common';
+
 
 @Component({
   selector: 'app-add-user',
@@ -23,8 +25,8 @@ export class AddUserComponent implements OnInit {
       nome: [ this.user ? this.user.nome : null, Validators.required],
       sobrenome: [this.user ? this.user.sobrenome : null, Validators.required],
       email: [this.user ? this.user.email : null , [Validators.required, Validators.email]],
-      escolaridade: [this.user ? this.user.escolaridade : null, Validators.required],
-      dataNascimento: [this.user ? this.user.dataNascimento : null, [Validators.required,this.validaDataDeNascimento ]]
+      escolaridade: [this.user ? this.user.escolaridadeId : null, Validators.required],
+      dataNascimento: [this.user ? formatDate(this.user.dataNascimento,  'yyyy-MM-dd', 'en') : null, [Validators.required,this.validaDataDeNascimento ]]
     });
   }
 
@@ -35,11 +37,11 @@ export class AddUserComponent implements OnInit {
 
   save(){
       this.userService.save({
-      id: this.user ? this.user.id : null,
+      id: this.user ? this.user.id : undefined,
       nome: this.form.get('nome').value,
       sobrenome: this.form.get('sobrenome').value,
       email: this.form.get('email').value,
-      escolaridade: parseInt(this.form.get('escolaridade').value) ,
+      escolaridadeId: parseInt(this.form.get('escolaridade').value) ,
       dataNascimento: this.form.get('dataNascimento').value
       });
       this.modal.close();

@@ -56,7 +56,7 @@ export class UserService {
     this.state.update(user);
   
     try {
-     await this.api.update(user.id,user);
+     await this.api.update(user.id, user);
      swal.fire('Sucesso', 'Alterado!','success');
     } catch (error) {
       swal.fire('Erro', 'Não foi possivel alterar','error');
