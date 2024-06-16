@@ -32,10 +32,10 @@ export class UserService {
     try {
       await this.api.remove(user.id);
       this.state.removeUser(user.id);
-      swal.fire('Sucesso', 'Excluído!','success');
+      swal('Sucesso', 'Excluído!','success');
      } catch (error) {
        //alert(error.message);
-       swal.fire('Erro', 'Não foi possivel excluir','error');
+       swal('Erro', 'Não foi possivel excluir','error');
        this.state.addUser(previousUser);
      }
   }
@@ -54,12 +54,12 @@ export class UserService {
 
     const previousUser = this.state.getById(user.id);
     this.state.update(user);
-  
+
     try {
      await this.api.update(user.id,user);
-     swal.fire('Sucesso', 'Alterado!','success');
+     swal('Sucesso', 'Alterado!','success');
     } catch (error) {
-      swal.fire('Erro', 'Não foi possivel alterar','error');
+      swal('Erro', 'Não foi possivel alterar','error');
       this.state.update(previousUser);
     }
   }
@@ -69,9 +69,9 @@ export class UserService {
     try {
      const userCreated = await this.api.create(user);
      this.state.addUser(userCreated);
-     swal.fire('Sucesso', 'Adicionado!','success');
+     swal('Sucesso', 'Adicionado!','success');
     } catch (error) {
-      swal.fire('Erro', 'Não foi possivel criar','error');
+      swal('Erro', 'Não foi possivel criar','error');
       this.state.removeUser(user.id);
     }
   }
