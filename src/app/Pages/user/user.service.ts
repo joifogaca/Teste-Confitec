@@ -18,7 +18,10 @@ export class UserService {
   }
 
   async loadAll() {
-    this.state.users = await this.api.getAll();
+    //this.state.users
+    this.api.getAll().subscribe((response) => {
+      this.state.users = response;
+    });
   }
 
   get users$(): Observable<User[]> {

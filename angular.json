@@ -18,11 +18,6 @@
           "sourceMap": true,
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "sourceMap": {
-                  "scripts": true,
-                  "styles": true,
-                  "vendor": true
-            },
             "outputPath": "dist/teste-confitec",
             "index": "src/index.html",
             "main": "src/main.ts",
